@@ -27,17 +27,49 @@ public class ReverseArray {
         // use y variable that is going forwards to store into the reverse array - index for reverse array
 
         System.out.println(Arrays.toString(reverse));
+
+
+
+        //Reverse a String + Palindrome
+
+        String name = "racecar";
+        String reversed = "";
+
+        for (int i = name.length()-1; i >= 0 ; i-- ){
+
+            reversed += name.charAt(i);
+        }
+
+        System.out.println(reversed);
+
+//        if (name.equals(reversed)){
+//            System.out.println("Palindrome");
+//        }else {
+//            System.out.println("Not palindrome");
+//        }
+
+
+
+        //Prime numbers
+
+        int num = 100;
+        // 2,3,4,5,6
+        boolean isPrime = true;
+
+
+        for (int i = 2; i < num; i++) {
+
+            if (num % i == 0 ) {
+                isPrime = false;
+            }
+
+
+
+            }
+        System.out.println(isPrime?  num+" is Prime" : num+" is Not Prime");
+        }
+
     }
-}
 
-/*
 
-    int i = last index
-    int y = 0;
 
-    while(i >=  0){
-        i--
-        y++
-     }
-
- */
